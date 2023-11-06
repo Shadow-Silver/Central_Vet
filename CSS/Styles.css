@@ -1,0 +1,86 @@
+/* Index-Estilos para el carrusel de imágenes */
+.client-services {
+    margin: 20px 0;/*espacio arriba abajo*/
+    overflow: hidden;/*cuando no se ve */
+}
+
+.slideshow {
+    white-space: nowrap;
+    animation: slide 22s linear infinite;/*da movimiento y tiempo*/
+    display:inline-flex;/*alineacion superior de imagenes*/
+    overflow: hidden;
+}
+
+
+
+.slideshow img {
+    max-width: auto;
+    height: 200px;/*ajustar alto de imagen en carrusel*/
+}
+
+@keyframes slide {/*movimiento entre imagenees y tiempo*/
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10%);
+    }
+    50% {
+        transform: translateX(-20%);
+    }
+    75% {
+        transform: translateX(-30%);
+    }
+}
+
+/* Estilos para la sección de información de clientes */
+.client-information {
+    padding: 80px;/*espacio margen superior*/
+    background-color: #de8282;
+    max-width: 1000px;/*ancho*/
+    margin: auto;
+    border-radius: 40px;
+}
+
+.client-information h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    margin-inline-end: 50px;
+}
+/*texto central vet busca*/
+.client-information p {
+    margin: 30px 60px;
+    text-align: left;
+    font-style: oblique;
+}
+
+.centered-image {
+    margin-top: 80px;/*espacio para la imagen*/
+    text-align: center;/*ubicacion*/
+}
+
+.centered-image img {
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+}
+/* Estilos para la sección de fotos de ancho completo */
+.full-width-photos {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;/*espacio entre seccion*/
+    max-width: 1200px;/*ancho*/
+    margin: auto;/*ajusta en el espacio al centro*/
+}
+
+.photo {
+    flex: 0 0 calc(33.33% - 8px);
+    margin: 5px;
+    
+}
+
+.photo img {
+    width: 94%;/*ajusta ancho*/
+    height: 200px;/*ajustar alto de imagen en carrusel*/
+}
