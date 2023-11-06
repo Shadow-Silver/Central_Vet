@@ -120,3 +120,33 @@ th, td {
     padding: 10px; /* Espaciado interior de las celdas */
     text-align: center; /* Alinear el contenido al centro */
   }
+/*****SERVICIOS****/
+/*****QUIENES SOMOS****/
+.nosotros-information {
+    padding: 80px;
+    background-color: #de8282;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.nosotros-information h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    margin-inline-end: 50px;
+}
+
+.nosotros-information p {
+    margin: 30px 60px;
+    text-align: left;
+    font-style: oblique;
+    color: #cc5200;
+}
+
+.qsimagen {
+    border-radius: 40px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
