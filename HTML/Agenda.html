@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <!-- -->
+    <!--CARACTERES UNIVERSALES -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ventana web -->
+    <link rel="icon" href="../MULTIMEDIA/logo.png">
+    <title>|CENTRAL-VET|FORMULARIO|</title>
+    <!--conexion css -->
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Styles.css">
+     <META name=”description” content="encuentra lo que necesitas en un solo lugar, al alcance de tu mano">
+     <META name=”keywords” content="mercado virtual PARA TU MASCOTA,mercado on.line,online, VET, VETERINARIA">
+</head>
+<body>
+    <header>
+        <div class="barnav">
+            <div class="logo">
+                <a href="#"><img src="../MULTIMEDIA/logo.png" alt="Merca one" width="80" height="80"></div></a>
+            </div>
+            <div class="menu"></div>
+                <nav>
+                    <ul>
+                        <a href="Index.html">Inicio</a>
+                        <a href="Clinicas.html">Clinicas</a>
+                        <a href="Servicios.html">Servicios</a>
+                        <a href="Quienes_Somos.html">Quienes somos</a>
+                        <a href="Blog.html">Blog</a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="boton">
+                <button>Telefono</button>
+                <a href="Agenda.html" target="_blank">
+                    <button>Agenda</button>
+                  </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form>
+            <div class="input-padron">
+                <label for="Nombre y Apellido"> Nombre y Apellido</label>
+                <input type="text" id="Nombre y Apellido"required placeholder="Pepito Perez">
+            
+                <label for="Correo Electronico">Correo Electronico</label>
+                <input type="text" id="Correo Electronico"required placeholder="ejemplo.nuevo@dominio.com.co">
+
+                <label for="Telefono">Telefono</label>
+                <input type="text" id="Telefono"required placeholder="(+##) ### #######">
+            
+            </div>
+            <textarea cols="70" rows="10" id="Mensaje" required placeholder="Alguna recomendacion?"></textarea>
+
+            <div>
+
+                <p>¿Cómo le gustaria ser contactado?</p>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">email</label>
+                
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="email" id="radio-telefono">Telefono</label>
+                
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="email" id="radio-whatsapp">WhatsApp</label>
+                
+
+            </div>
+
+            <label class="checkbox"><input type="checkbox">¿Le gustaria recibir novedades? </label>
+
+            <input class="enviar" type="submit" value="ENVIAR">
+
+        </form>            
+    </main>
+   
+    <footer>
+        <a href="#"><img src="../MULTIMEDIA/logo.png"alt="veterinaria" width="150" height="100"></div></a>
+        <p class="copy"> &copy Copyright CENTRAL VET - 2023 </p>
+    </footer>  
+</body>
+</html>
