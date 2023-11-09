@@ -1,25 +1,44 @@
 /* Index-Estilos para el carrusel de imágenes */
+
+
 .client-services {
     margin: 20px 0;/*espacio arriba abajo*/
     overflow: hidden;/*cuando no se ve */
 }
+.slideshow{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    margin: 0;
+}
+.slideshow div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all cubic-bezier(.25, .4, .45, 1.4);
+}
+.slideshow div:hover{
+    flex: 5;
+}
 
-.slideshow {
+/*.slideshow {
     white-space: nowrap;
     animation: slide 22s linear infinite;/*da movimiento y tiempo*/
-    display:inline-flex;/*alineacion superior de imagenes*/
-    overflow: hidden;
+    /*display:inline-flex;/*alineacion superior de imagenes*/
+   /* overflow: hidden;
 }
 
+*/
 
-
-.slideshow img {
+/*.slideshow img {
     max-width: auto;
-    height: 200px;/*ajustar alto de imagen en carrusel*/
-}
+    height: 200px;/*ajustar alto de imagen en carrusel
+}*/
 
-@keyframes slide {/*movimiento entre imagenees y tiempo*/
-    0%, 100% {
+/*@keyframes slide {/*movimiento entre imagenees y tiempo*/
+    /*0%, 100% {
         transform: translateX(0);
     }
     25% {
@@ -31,8 +50,7 @@
     75% {
         transform: translateX(-30%);
     }
-}
-
+}*/
 /* Estilos para la sección de información de clientes */
 .client-information {
     padding: 80px;/*espacio margen superior*/
@@ -238,7 +256,7 @@ form label, form p{
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background: rgb(9, 255, 0);
+    background: #09ff00;
     transition: 2s all;
     cursor: pointer;
     border-radius: 25px;
@@ -249,20 +267,3 @@ form label, form p{
     border-color:rgb(252, 0, 0); 
     transform: scale(1.2);
 }     
-/*REDESSSSSSSSS*/
-.redes-sociales {
-    list-style: none;
-    padding: 0;
-}
-
-/* Estilo para cada ícono de red social */
-.redes-sociales li {
-    display: inline;
-    margin-right: 10px; /* Espacio entre los íconos */
-}
-
-/* Estilo para las imágenes de los íconos */
-.redes-sociales img {
-    width: 30px; /* Ajusta el tamaño según tus necesidades */
-    height: 30px;
-}
