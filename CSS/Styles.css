@@ -1,44 +1,22 @@
 /* Index-Estilos para el carrusel de imágenes */
-
-
 .client-services {
     margin: 20px 0;/*espacio arriba abajo*/
     overflow: hidden;/*cuando no se ve */
 }
-.slideshow{
-    display: flex;
-    height: 20rem;
-    gap: 1rem;
-    margin: 0;
-}
-.slideshow div{
-    flex: 1;
-    border-radius: 1rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    transition: all cubic-bezier(.25, .4, .45, 1.4);
-}
-.slideshow div:hover{
-    flex: 5;
-}
-
-/*.slideshow {
+.slideshow {
     white-space: nowrap;
     animation: slide 22s linear infinite;/*da movimiento y tiempo*/
-    /*display:inline-flex;/*alineacion superior de imagenes*/
-   /* overflow: hidden;
+    display:inline-flex;/*alineacion superior de imagenes*/
+    overflow: hidden;
+}
+.slideshow img {
+    width: 200px;
+    max-width: auto;
+    height: 200px;/*ajustar alto de imagen en carrusel*/
 }
 
-*/
-
-/*.slideshow img {
-    max-width: auto;
-    height: 200px;/*ajustar alto de imagen en carrusel
-}*/
-
-/*@keyframes slide {/*movimiento entre imagenees y tiempo*/
-    /*0%, 100% {
+@keyframes slide {/*movimiento entre imagenees y tiempo*/
+    0%, 100% {
         transform: translateX(0);
     }
     25% {
@@ -50,7 +28,7 @@
     75% {
         transform: translateX(-30%);
     }
-}*/
+}
 /* Estilos para la sección de información de clientes */
 .client-information {
     padding: 80px;/*espacio margen superior*/
@@ -95,19 +73,21 @@
 .photo {
     flex: 0 0 calc(33.33% - 8px);
     margin: 5px;
-    
 }
 
 .photo img {
     width: 94%;/*ajusta ancho*/
     height: 200px;/*ajustar alto de imagen en carrusel*/
+    border-radius: 10px;
 }
 /****CLINICAS*****/
 .infoClin {
     display: flex;
+    top: 0; /* Fija la sección en la parte superior de la pantalla */
+    left: 0; /* Fija la sección en el lado izquierdo de la pantalla */
     justify-content: space-between;
     align-items: center;
-    background-color: #ca8181; /* Color de fondo del rectángulo */
+    background-color: rgb(191, 138, 241); /* Color de fondo del rectángulo */
     padding: 10px; /* Espaciado interior */
     border: 1px solid #ccc; /* Borde del rectángulo */
     width: 80%; /* Ancho del rectángulo (puedes ajustarlo según tus necesidades) */
@@ -119,7 +99,6 @@
     text-align: calc(100% - 20px); /* Centrar el texto */
 }
 
-
 /* Estilos para el texto */
 .textclin {
     width: 70%; /* Ancho del área de texto (puedes ajustarlo según tus necesidades) */
@@ -128,7 +107,6 @@
 table {
     width: 50%; /* Ancho de la tabla al 100% del contenedor */
     border-collapse: collapse; /* Fusionar los bordes de las celdas */
-    border: 0px solid #ccc; /* Agregar bordes a las celdas */
     padding: 10px; /* Espaciado interior de las celdas */
     margin: auto;
   }
@@ -138,11 +116,15 @@ th, td {
     padding: 10px; /* Espaciado interior de las celdas */
     text-align: center; /* Alinear el contenido al centro */
   }
+  table img {
+    width: 350px; 
+    height:300px;
+}
 /*****SERVICIOS****/
 /*****QUIENES SOMOS****/
 .nosotros-information {
     padding: 80px;
-    background-color: #de8282;
+    background-color: rgb(191, 138, 241);
     max-width: 1000px;
     margin: auto;
     border-radius: 40px;
@@ -163,20 +145,24 @@ th, td {
 }
 
 .qsimagen {
-    border-radius: 40px;
     margin: 10px;
     padding: 10px;
     text-align: center;
 }
+.qsimagen img {
+        width: 450px; 
+        height:400px;
+        border-radius: 40px;
+}
+
 /***Blogggg****/
 .categorias li{
     display:inline-block; 
     text-align: center;
-    width: 19%;
+    width: 30%; /*reduce el ancho para acomodar imagenes*/
     vertical-align: top;
-    border-color: rgb(247, 246, 246);
-    border-width:2px ;
-    border-style: solid;
+    margin-bottom: 20px;
+    border: 2px solid rgb(135, 92, 92);
     border-radius: 10px;
     transition: 1s all;
     cursor: pointer;
@@ -188,40 +174,37 @@ th, td {
 }
 .categorias li:hover{
     border-color:orange;
-    transform: scale(1.1);  
+    transform: scale(0.9);  
 }
 .categorias{
-    width: auto;
-    margin: 30px;
-    padding: 30px;
+    width: 90%;
+    margin: 30px auto;
 }
 .categorias h2{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
 }
 .categorias li:hover h2 {  
-    font-size: 23px;
+    font-size: 16px;
+}
+.categorias p {
+    font-size: 14px; /* Tamaño del texto */
 }
 
-.ini1 a:hover{
-    
-    text-decoration: underline;
+.categorias a {
+    text-decoration: none;
 }
+.categorias img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
 .caja{
     position: relative;
     margin: auto;
-    width: 9400px;
+    width: 940px;
 }
 
-.categorias li:hover{
-    border-color:rgb(11, 184, 11);  
-}
-
-.copy{
-    color: white;
-    font-size: 8px;
-    margin: 15px;
-}
 .logoini{
    align-items: left; 
    margin: 1px;
@@ -260,9 +243,7 @@ form label, form p{
     transition: 2s all;
     cursor: pointer;
     border-radius: 25px;
-
 }
- 
 .enviar:hover{
     border-color:rgb(252, 0, 0); 
     transform: scale(1.2);
